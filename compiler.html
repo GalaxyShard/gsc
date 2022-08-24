@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://galaxyshard.github.io/web/css-load.js"></script>
+    <link rel="stylesheet" href="https://galaxyshard.github.io/web/grid.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="compiled/calcc.js" defer></script>
+    <script src="compiler.js" defer></script>
+
+    <title>GSC Online Compiler</title>
+</head>
+<body>
+    <nav class="row">
+        <div style="--sm:12.5%; --xs:0;">&nbsp;</div>
+        <div class="sm-3 xs-12">
+            <a href="compiler.html">Compiler</a>
+        </div>
+        <div class="sm-3 xs-12">
+            <a href="guide.html">Guide</a>
+        </div>
+        <div class="sm-3 xs-12">
+            <a href="index.html">Info</a>
+        </div>
+        <div style="--sm:12.5%; --xs:0;">&nbsp;</div>
+    </nav>
+
+
+    <div class="inside center">
+        <h1 class="center">Compiler</h1>
+        Paste a script below and hit compile to output bytecode
+        <textarea id="input"></textarea>
+        
+        <div class="row">
+            <div class="sm-6 xs-12">
+                <button id="compile">Compile</button>
+            </div>
+            <div class="sm-6 xs-12">
+                <button id="copy">Copy Output</button>
+            </div>
+        </div>
+        <output id="log"></output>
+    </div>
+</body>
+</html>
