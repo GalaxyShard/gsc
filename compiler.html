@@ -31,7 +31,9 @@
 
     <div class="inside center">
         <h1 class="center">Compiler</h1>
-        Paste a script below and hit compile to output bytecode
+        Paste a script below or <label for="selectedFile" class="highlightHover"><u>click here</u></label> to select a gsc file and hit compile to output bytecode<br>
+        <input type="file" accept=".gsc" id="selectedFile" hidden/>
+        
         <textarea id="input"></textarea>
         
         <div class="row">

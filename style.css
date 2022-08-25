@@ -52,7 +52,10 @@ nav a:hover {
     border-radius:5px;
     margin:10px auto 10px auto;
 }
-#compile:hover,#copy:hover {
+.highlightHover {
+    transition: color 0.2s 0s;
+}
+#compile:hover,#copy:hover, .highlightHover:hover {
     color:grey;
 }
 #log {
@@ -67,6 +70,7 @@ nav a:hover {
     
     overflow-wrap:break-word;
     white-space: normal;
+    font-family:monospace;
 }
 .large {
     font-size:1.5rem;
