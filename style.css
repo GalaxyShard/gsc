@@ -11,7 +11,12 @@ body {
 
 nav {
     margin:20px 0 0 0;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+}
+@media (min-width:768px) { /* width >= 768px */
+    nav {
+        margin:20px 12.5% 0 12.5%;
+    }
 }
 nav a {
     background-color: #dddddd;
@@ -22,7 +27,7 @@ nav a {
     padding:5px;
 
     display:inline-block;
-    width:125px;
+    width:90px;
     border-radius:5px;
 }
 nav > * {
@@ -46,9 +51,9 @@ nav a:hover {
     border:2px solid #000000;
     padding:5px;
 
-    font-size:1.75rem;
+    font-size:1.5rem;
     display:block;
-    width:175px;
+    width:105px;
     border-radius:5px;
     margin:10px auto 10px auto;
 }
