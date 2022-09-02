@@ -74,7 +74,7 @@ nav a:hover {
     margin:10px 0 10px 0;
     
     overflow-wrap:break-word;
-    white-space: normal;
+    white-space:pre-wrap;
     font-family:monospace;
 }
 .large {

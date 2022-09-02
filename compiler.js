@@ -6,11 +6,10 @@ var output = document.getElementById("log");
 var inputFile = document.getElementById("selectedFile");
 
 compileButton.addEventListener("click", function() {
-    console.log("Input: " + input.value);
+    output.textContent = "";
     Module.callMain([input.value]);
 });
 copyButton.addEventListener("click", function() {
-    console.log("Copying");
     navigator.clipboard.writeText(output.textContent);
 });
 inputFile.addEventListener("change", function() {
