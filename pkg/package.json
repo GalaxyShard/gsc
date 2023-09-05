@@ -1,0 +1,14 @@
+{
+  "name": "nua-compiler",
+  "version": "0.1.0",
+  "files": [
+    "nua_compiler_embed_bg.wasm",
+    "nua_compiler_embed.js",
+    "nua_compiler_embed.d.ts"
+  ],
+  "module": "nua_compiler_embed.js",
+  "types": "nua_compiler_embed.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

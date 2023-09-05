@@ -1,3 +1,4 @@
+import init, { js_compile as compile } from "./pkg/nua_compiler_embed.js"
 
 var copyButton = document.getElementById("copy");
 var compileButton = document.getElementById("compile");
@@ -5,9 +6,23 @@ var input = document.getElementById("input");
 var output = document.getElementById("log");
 var inputFile = document.getElementById("selectedFile");
 
-compileButton.addEventListener("click", function() {
+// init().then()
+let hasInitialized = false;
+let initializing = false;
+compileButton.addEventListener("click", async function() {
+    if (initializing) {
+        return;
+    }
     output.textContent = "";
-    Module.callMain([input.value]);
+
+    if (!hasInitialized) {
+        initializing = true;
+        await init();
+        initializing = false;
+        hasInitialized = true;
+    }
+    let result = compile(input.value);
+    output.textContent = new TextDecoder().decode(result);
 });
 copyButton.addEventListener("click", function() {
     navigator.clipboard.writeText(output.textContent);
