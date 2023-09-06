@@ -6,7 +6,6 @@ var input = document.getElementById("input");
 var output = document.getElementById("log");
 var inputFile = document.getElementById("selectedFile");
 
-// init().then()
 let hasInitialized = false;
 let initializing = false;
 compileButton.addEventListener("click", async function() {
