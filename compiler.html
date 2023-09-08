@@ -31,18 +31,13 @@
         </p>
         <input type="file" accept=".nua" id="selectedFile" hidden/>
         
-        <textarea spellcheck="false" id="input">// Source code goes here</textarea>
-        
-        <div class="row">
-            <div class="col-6">
-                <button id="compile">Compile</button>
-            </div>
-            <div class="col-6">
-                <button id="copy">Copy</button>
-            </div>
+        <div class="io-container">
+            <textarea spellcheck="false" id="input">// Source code goes here</textarea>
+            <button id="compile">Compile</button>
         </div>
-        <div id="log-container">
-            <div>Output</div>
+        
+        <div class="io-container">
+            <button id="copy">Copy Output</button>
             <output id="log"></output>
         </div>
     </div>
